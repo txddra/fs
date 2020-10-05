@@ -16,5 +16,6 @@ const fs = require('fs');
 // })
 fs.writeFileSync('randomText.txt', 'utf8', (err)=>{
     if(err) throw err
+    console.log('randomText.txt created')
 
 })
