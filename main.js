@@ -10,7 +10,11 @@
 
 const fs = require('fs');
 
-fs.mkdir('direct', (err)=>{
+// fs.mkdir('direct', (err)=>{
+//     if(err) throw err
+//     console.log('content folder created')
+// })
+fs.writeFileSync('randomText.txt', 'utf8', (err)=>{
     if(err) throw err
-    console.log('content folder created')
+
 })
