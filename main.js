@@ -26,7 +26,11 @@ const fs = require('fs');
 // })
 
 /*copies the data and places it in a new text file */
-// fs.writeFile('verbage.txt','utf8', (err)=>{
+fs.readFile('randomText.txt', 'utf8', (err, info)=>{
+    if(err) throw err;
+
+ })
+// fs.writeFile('./direct/verbage.txt','utf8', (err)=>{
 //     if(err) return console.log(err);
 //     console.log('verbage.txt created')
 
@@ -34,9 +38,9 @@ const fs = require('fs');
 
 /*set timeout */
 
-setTimeout(() => {
-    fs.rmdir('./direct', (err)=>{
-        if(err) throw err
-    })
+// setTimeout(() => {
+//     fs.rmdir('./direct', (err)=>{
+//         if(err) throw err
+//     })
 
-    },7000)
+//     },7000)
