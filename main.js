@@ -10,12 +10,24 @@
 
 const fs = require('fs');
 
+
+/*creates directory*/
+
 // fs.mkdir('direct', (err)=>{
-//     if(err) throw err
+//     if(err) throw err;
 //     console.log('content folder created')
 // })
-fs.writeFileSync('randomText.txt', 'utf8', (err)=>{
-    if(err) throw err
-    console.log('randomText.txt created')
+
+/*created text file*/
+// fs.writeFile('randomText.txt', 'utf8', (err)=>{
+//     if(err) throw err;
+//     console.log('randomText.txt created')
+
+// })
+
+/*copies the data and places it in a new text file */
+fs.writeFile('verbage.txt','utf8', (err)=>{
+    if(err) return console.log(err);
+    console.log('verbage.txt created')
 
 })
